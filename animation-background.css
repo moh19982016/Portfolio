@@ -1,0 +1,22 @@
+
+.container-background1{overflow: hidden;}
+.animation-background1{position: relative; width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;
+ background-attachment: fixed; background-size: cover; background-position: center;}
+.animation-background1 .banner{display: block; width: 100%; height: 100%; position:absolute; top: 0; left: 0; display: flex; flex-wrap: wrap; overflow: hidden;}
+.animation-background1 .banner .blocks{display: block; position: relative; width: 10%; height: 10%; animation: anim 0.75s ease-in-out forwards;}
+
+.animation-background1 .banner .blocks:nth-child(even){animation: anim 1s ease-in-out forwards;}
+.animation-background1 .banner .blocks:nth-child(3n){animation: anim 1.5s ease-in-out forwards;}
+.animation-background1 .banner .blocks:nth-child(5n){animation: anim 2s ease-in-out forwards;}
+
+.animation-background1 p{color: red; font-size: 6em; font-weight: bold; position: relative; z-index: 100; text-align: center;}
+
+
+
+
+@keyframes anim{
+    0%{opacity: 0; transform: scale(0) translateY(1000px);}
+    50%{opacity: 1;background: url(images/my-love.jpg); background-attachment: fixed; background-position: right; background-size: cover; background-position: top right;}
+    100%{opacity: 1; transform: scale(1) translateY(0px); background: url(images/my-love.jpg); 
+        background-attachment: fixed; background-position: center; background-size: cover; background-position: top right;}
+}
